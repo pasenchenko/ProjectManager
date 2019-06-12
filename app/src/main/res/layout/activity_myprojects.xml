@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Button
+            android:id="@+id/new_project_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_project"
+            android:onClick="onCreateProjectClick"
+            android:background="@drawable/round_corners"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myprojects_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/new_project_button"/>
+
+</RelativeLayout>
+
